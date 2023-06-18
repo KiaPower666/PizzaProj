@@ -1,4 +1,4 @@
-# Treasure proj
+# Pizza proj 
 
 ### Workflow tutorial
 
