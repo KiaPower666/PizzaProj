@@ -8,3 +8,5 @@ addClassFoundById("ingredients", styles.container);
 addClassFoundByClass("input-div", styles.inputdiv);
 addClassFoundByClass("input1", styles.input);
 addClassFoundByClass("checkbox-label", styles.checkboxlabel);
+
+
