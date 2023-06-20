@@ -12,17 +12,17 @@
   border-radius: 30px;
   padding: 0 25px;
 
-  .input-div {
+  .inputdiv {
     position: relative;
     .input {
       appearance: none;
       position: absolute;
     }
 
-    .checkbox-label {
+    .checkboxlabel {
       padding-left: 25px;
 
-      &::before {
+      .pseudo {
         content: "";
         display: block;
         width: 16px;
@@ -30,22 +30,20 @@
         border: 2px solid $black;
         border-radius: 5px;
         position: absolute;
+      }
+
+      &::before {
+        @extend .pseudo;
         top: 5px;
         left: 0;
         z-index: 1;
       }
 
       &::after {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 2px solid $black;
-        border-radius: 5px;
+        @extend .pseudo;
         /* background: url(./img/checkbox.svg) no-repeat; */
         background-size: 16px 16px;
         opacity: 0;
-        position: absolute;
         top: 5px;
         left: 0;
         z-index: 2;
