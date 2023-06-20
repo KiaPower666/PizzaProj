@@ -3,3 +3,4 @@ import { addClassFoundById } from "../helpers/addClassFoundById";
 /* import { addBackground } from '../helpers/addbackground'; */
 
 addClassFoundById("ingredients", styles.ingredients);
+addClassFoundById("ingredients", styles.container);
