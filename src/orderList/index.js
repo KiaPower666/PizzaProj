@@ -16,8 +16,8 @@ function toggleIngredient(checkboxId, ingredientName) {
         orderList.appendChild(listItem);
         orderspan.style.display = "none";
     } else{
-        const item = orderList.getElementsByTagName("li");
-        for(let i = 0; i < item.length; i++) {
+        const items = orderList.getElementsByTagName("li");
+        for(let i = 0; i < items.length; i++) {
             if(items[i].innerHTML === ingredientName) {
                 orderList.removeChild(items[i]);
                 break;
